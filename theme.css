@@ -1,0 +1,106 @@
+/*
+ * Botanical — Cream and terracotta.
+ *
+ * The complete token set. Every rule in design.css reads from these names,
+ * so this file is the whole visual identity: change a value here and the
+ * entire gallery follows.
+ *
+ * The second block below holds derived accessibility values. Each one is
+ * the designer's colour pushed toward the opposite end of the ramp until it
+ * clears its WCAG minimum against every surface it can land on -- page,
+ * sheet, and the tinted fills of badges and diff lines. They are generated
+ * and checked, not hand-picked; see build/verify.py in the design tooling.
+ */
+
+[data-theme="botanico"] {
+  --paper: #f3efe4;
+  --paper-2: #e8e2d2;
+  --sheet: #fbf8f0;
+  --ink: #2a3226;
+  --ink-2: #56604d;
+  --ink-3: #7e8873;
+  --rule: #d3cdbb;
+  --signal: #b4673a;
+  --signal-soft: #e8c9af;
+  --signal-hover: #9a552e;
+  --ink-hover: #3b4636;
+  --add: #4f7a46;
+  --del: #a8452f;
+  --board: #2a3226;
+  --board-deep: #1f261c;
+  --board-2: #39432f;
+  --board-rule: #4a5540;
+  --board-text: #f3efe4;
+  --board-dim: #a8b09b;
+  --ok-board: #93c99f;
+  --err-board: #e8a08a;
+  --code-str: #d9a566;
+  --code-add-bg: color-mix(in srgb, #6fae7f 18%, transparent);
+  --code-add-fg: #a3d9b0;
+  --code-del-bg: color-mix(in srgb, #c9705a 16%, transparent);
+  --code-del-fg: #e8a795;
+  --code-del-text: #c2a49a;
+  --line-openai: #3f6fa8;
+  --line-anthropic: #a8496f;
+  --line-google: #4f7a46;
+  --line-mistral: #7a5aa8;
+  --line-deepseek: #8a7a2e;
+  --font: "Fraunces", Georgia, "Bitter", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+  --display: var(--font);
+  --display-weight: 600;
+  --display-tracking: -0.01em;
+  --display-tracking-lg: -0.015em;
+  --display-tracking-tight: -0.02em;
+  --display-transform: none;
+  --btn-weight: 600;
+  --btn-tracking: 0.01em;
+  --btn-transform: none;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 26px;
+  --r-pill: 999px;
+  --bw: 1px;
+  --rule-w: 1px;
+  --bw-heavy: 2px;
+  --rule-style: solid;
+  --shadow-card: 0 18px 40px -26px color-mix(in srgb, var(--ink) 55%, transparent);
+  --shadow-btn: 0 6px 14px -10px color-mix(in srgb, var(--ink) 60%, transparent);
+  --shadow-btn-hover: 0 9px 20px -10px color-mix(in srgb, var(--ink) 62%, transparent);
+  --shadow-panel: 0 20px 50px -34px color-mix(in srgb, var(--ink) 50%, transparent);
+  --btn-hover-transform: translateY(-1px);
+  --panel-blur: none;
+  --section-y: clamp(72px, 10vw, 128px);
+  --size-base: 1.125rem;
+  --texture: radial-gradient( 70% 45% at 82% 0%, color-mix(in srgb, var(--signal) 12%, transparent), transparent 70% );
+  --texture-size: 100% 100%;
+  --texture-position: 0 0;
+  --texture-repeat: no-repeat;
+  --texture-attachment: fixed;
+  --accent-2: #4f7a46;
+  --accent-3: #e8c9af;
+
+  /* Derived for contrast; see the note above. */
+  --add-text: #4a7242;
+  --board-add-text: #a3d9b0;
+  --board-code-text: #d9a566;
+  --board-del-text: #c2a49a;
+  --board-dim-text: #a8b09b;
+  --board-key-text: #daa769;
+  --del-text: #a8452f;
+  --focus-ring: #b4673a;
+  --ink-3-text: #606757;
+  --on-ink-muted: #a8b09b;
+  --on-signal: #0a0a0a;
+  --signal-soft-text: #0a0a0a;
+  --signal-text: #9a5832;
+
+  color-scheme: light;
+}
+
+/* ---------- Identity rules that are not tokens ---------- */
+[data-theme="botanico"] .panel,
+[data-theme="botanico"] .kpi,
+[data-theme="botanico"] .table-wrap {
+  box-shadow: 0 22px 46px -28px color-mix(in srgb, var(--ink) 58%, transparent);
+}
